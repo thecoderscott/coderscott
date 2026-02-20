@@ -1,0 +1,51 @@
+/* ─── Design tokens ──────────────────────────────────────────────────────── */
+:root {
+  --color-bg: #b4b8c9;
+  --color-primary: #1f2024;
+  --color-highlight: #8e3201;
+  --color-muted: #4e515b;
+
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-serif: 'DM Serif Display', serif;
+  --font-sans: 'Nunito', sans-serif;
+
+  --header-height: 64px;
+}
+
+/* ─── Global reset ───────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
